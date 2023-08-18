@@ -1,0 +1,74 @@
+1) pwd- this command prints the current working directory.It gives us the absolute path.
+
+2) ls - It lists the file and folder in the directory that you specify
+
+-l: Long list format – Displays additional details such as file size, modified date/time stamp, etc., for each item listed
+-r: Reverse order while sorting – Sorts items in reverse alphabetical/numerical order
+-t: Sort by modification time – Orders items based on their last-modified timestamp
+-a: displays the hidden file.
+
+
+3) cd - This command changes the directory. To go back to the folder before that use cd ..
+
+4) mkdir - This command allows you to create new directories.
+
+5) rm - This is used to delete a file or directory. We use rm -r to delete a directory 
+6) cp- cp command is used to copy files or directory or group of files.
+
+7) mv command is used to move files or directories  from one place to another. This command can also be used to rename a file.
+
+8) cat- this command is used to display the contents of file.
+
+9) grep- It searches for line which contains the search pattern.
+
+10) exit- The exit command will end the execution of a shell script and will close a terminal window.
+
+
+11) touch- this command is used to create a new blank file. Use vi to edit the file.
+
+12) clear- this command is used to clear the terminal screen.
+
+
+
+Commands executed on terminal in this video 
+
+PLEASE Note: ****THESE COMMANDS ARE JUST FOR YOUR REFERENCE. YOU SHOULD COPY AND PASTE THEM FROM THE TEXT FILE INSTEAD YOU SHOULD TYPE THE COMMAND ON YOUR OWN ON THE TERMINAL
+FOR BETTER UNDERSTANDING*******
+
+1) pwd
+
+2) clear
+
+3) ls -ltrs 
+
+4) ls -a 
+
+5) cd bigdata_cloudyml
+
+6) cd ..
+
+7) mkdir bigdata3
+
+8) rm orders.java
+9) rm -r bigdata3
+10) cp filea.txt bigdata3
+11) cd bigdata3
+12) ls  
+
+13) mv file_a.txt file1_a.txt
+
+14) ls
+
+15) touch bigdata.txt
+
+16) vi bigdata.txt
+
+17)  cat bigdata.txt
+
+18) cd bigdata3
+
+19) grep Welcome *.txt
+
+20) grep Cloudyml *.txt
+
+21)  exit

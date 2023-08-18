@@ -1,0 +1,41 @@
+HDFS commands
+
+1) To get help use command hadoop fs -help ls.
+
+2) To list all files in the local system use ls /home/cloudera (home directory in local)
+
+    To list all files in hdfs use hadoop fs -ls /user/cloudera (home directory in hdfs).
+
+3) To create new directory in hdfs use hadoop fs -mkdir /user/cloudera/analytics
+
+4) To create hierarchy of directories use hadoop fs -mkdir -p /user/cloudera/folder1/folder2.
+
+5) To remove a files but not directories use hadoop fs -rm /user/cloudera/file1.txt
+
+6) To remove directory we have to give -R.Command for the same is hadoop fs -rm -R /user/cloudera/analytics
+
+7) To remove empty commands use rmdir command.(This you need to execute on your own as home assignment).
+
+8) copy files or folder from local to hdfs we use 2 commands copyfromlocal (or) put
+    
+Steps followed:
+
+a) Create hdfs directory  hadoop fs -mkdir /cloudyml
+b) Create a file on local desktop 
+
+c) Run the command hadoop fs -copyFromLocal /home/cloudera/Desktop/file1.txt /user/cloudera/analytics.
+
+9) Copy files from hdfs to local we use two commands copyToLocal or(get). Please find below command for the same
+
+hadoop fs -copyToLocal <hdfs path> <local path> 
+or hadoop fs -get <hdfs path> <local path>
+
+10) For copying and renaming files from one location to another location in hdfs we use the same commands such as
+cp for copying and mv for renaming , but since we are executing in hdfs as already told use hadoop fs to execute the 
+commands on hdfs.( You can try this own your own as an assignment and reach out to us if you have any queries because
+we have already implemented linux commands for the same.)
+
+11) to check free disk space  use hadoop fs -df -h /user/cloudera ( here h stands for human readable format. If we do
+not give this then it will show in bytes).
+
+12)  to check the disk usage  use hadoop fs -du -h /user/cloudera.
